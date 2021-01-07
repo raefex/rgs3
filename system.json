@@ -1,3 +1,24 @@
 {
-  "name": "rgs3"
+  "name": "rgs3",
+  "title": "Fate of the Norns",
+  "description": "A system for playing Fate of the Norns games.",
+  "author": "Raefex",
+  "version": 0.01,
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.7.9",
+  "esmodules": [
+    "rgs3.js"
+  ],
+  "styles": [
+    "rgs3.css"
+  ],
+  "packs": [
+
+  ],
+  "languages": [
+
+  ],
+  "gridDistance": 2,
+  "gridUnits": "m",
+  "initiative": ""
 }

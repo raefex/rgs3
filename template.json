@@ -2,5 +2,117 @@
   "Actor": {
   },
   "Item": {
+    "types": [
+      "Active Power",
+      "Skill",
+      "Social Ability",
+      "Equipment",
+      "Void Rune",
+      "Passive Power"
+    ],
+    "templates": {
+      "runeType": {
+        "rune": {
+          "trait": "",
+          "symbol": ""
+        }
+      },
+      "talent": {
+        "metas": {
+          "physical": "",
+          "mental": "",
+          "spiritual": ""
+        },
+        "rank": 0
+      },
+      "power": {
+        "effects": {},
+        "equipmentBonus": "",
+        "rankBonus": ""
+      }
+    },
+    "description": "",
+    "Active Power": {
+      "templates": ["runeType","talent","power"],
+      "powerTypes": {}
+    },
+    "Skill": {
+      "templates": ["runeType","talent"]
+    },
+    "Social Ability": {
+      "templates": ["runeType","talent","power"],
+      "actionType": ""
+    },
+    "Equipment": {
+      "equipped": false,
+      "qr": {
+        "total": 0,
+        "spent": 0,
+        "avail": 0
+      },
+      "qualities": {},
+      "itemMetas": {}
+    },
+    "Void Rune": {
+      "archetype": "",
+      "trait": "",
+      "activePower": {
+        "name": "",
+        "talent": {
+          "metas": {
+            "physical": "",
+            "mental": "",
+            "spiritual": ""
+          },
+          "rank": 0
+        },
+        "power": {
+          "effects": {},
+          "equipmentBonus": "",
+          "rankBonus": ""
+        },
+        "powerTypes": {}
+      },
+      "socialAbility": {
+        "name": "",
+        "talent": {
+          "metas": {
+            "physical": "",
+            "mental": "",
+            "spiritual": ""
+          },
+          "rank": 0
+        },
+        "power": {
+          "effects": {},
+          "equipmentBonus": "",
+          "rankBonus": ""
+        },
+        "actionType": ""
+      },
+      "skill": {
+        "name": "",
+        "talent": {
+          "metas": {
+            "physical": "",
+            "mental": "",
+            "spiritual": ""
+          },
+          "rank": 0
+        }
+      },
+      "passive": {
+        "name": "",
+        "passiveType": "",
+        "nonCombat": "",
+        "effects": {}
+      }
+    },
+    "Passive Power": {
+      "templates": ["runeType"],
+      "passiveType": "",
+      "nonCombat": "",
+      "effects": {}
+    }
   }
 }
