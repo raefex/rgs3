@@ -1,0 +1,42 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "rgs3.trait.physical"}}</th>
+                <th>{{localize "rgs3.trait.mental"}}</th>
+                <th>{{localize "rgs3.trait.spiritual"}}</th>
+            </tr>
+            <td>
+                <select name="data.metas.physical">
+                    {{#select data.metas.physical}}
+                    {{#each config.metaNames as |name type|}}
+                    <option value="{{type}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+            <td>
+                <select name="data.metas.mental">
+                    {{#select data.metas.mental}}
+                    {{#each config.metaNames as |name type|}}
+                    <option value="{{type}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+            <td>
+                <select name="data.metas.spiritual">
+                    {{#select data.metas.spiritual}}
+                    {{#each config.metaNames as |name type|}}
+                    <option value="{{type}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+        </table>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+{
+    "rgs3": {
+        "trait": {
+            "physical": "Physical",
+            "mental": "Mental",
+            "spiritual": "Spiritual"
+        },
+        "meta": {
+            "abate": "Abate",
+            "aid": "Aid",
+            "amplify": "Amplify",
+            "area": "Area",
+            "dodge": "Dodge",
+            "efficient": "Efficient",
+            "element": "Element",
+            "invert": "Invert",
+            "maintain": "Maintain",
+            "mastery": "Mastery",
+            "multi": "Multi",
+            "range": "Range",
+            "resist": "Resist",
+            "sinister": "Sinister",
+            "surmount": "Surmount",
+            "swift": "Swift"
+        }
+    }
+}

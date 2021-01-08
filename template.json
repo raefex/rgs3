@@ -3,12 +3,12 @@
   },
   "Item": {
     "types": [
-      "Active Power",
+      "Active",
       "Skill",
-      "Social Ability",
+      "Social",
       "Equipment",
-      "Void Rune",
-      "Passive Power"
+      "Void",
+      "Passive"
     ],
     "templates": {
       "runeType": {
@@ -32,14 +32,14 @@
       }
     },
     "description": "",
-    "Active Power": {
+    "Active": {
       "templates": ["runeType","talent","power"],
       "powerTypes": {}
     },
     "Skill": {
       "templates": ["runeType","talent"]
     },
-    "Social Ability": {
+    "Social": {
       "templates": ["runeType","talent","power"],
       "actionType": ""
     },
@@ -53,7 +53,7 @@
       "qualities": {},
       "itemMetas": {}
     },
-    "Void Rune": {
+    "Void": {
       "archetype": "",
       "trait": "",
       "activePower": {
@@ -108,7 +108,7 @@
         "effects": {}
       }
     },
-    "Passive Power": {
+    "Passive": {
       "templates": ["runeType"],
       "passiveType": "",
       "nonCombat": "",
