@@ -1,7 +1,8 @@
 export default class RGS3ItemSheet extends ItemSheet {
 
     get template() {
-        return `systems/rgs3/templates/sheets/${this.item.data.type}-sheet.html`;
+        let typeName = this.item.data.type.toLowerCase();
+        return `systems/rgs3/templates/sheets/${typeName}-sheet.html`;
     }
 
     getData() {

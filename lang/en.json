@@ -22,6 +22,17 @@
             "sinister": "Sinister",
             "surmount": "Surmount",
             "swift": "Swift"
+        },
+        "weapon": {
+            "effect": "Effect(s)",
+            "equipBonus": "Equipment Bonus",
+            "rank": "Rank Bonus",
+            "powerType": "Power Type(s)"
+        },
+        "powerEffects": {
+            "effectKey": "Effect #",
+            "effectLabel": "Effect Type",
+            "effectValue": "Value"
         }
     }
 }

@@ -18,3 +18,16 @@ rgs3.metaNames = {
     surmount: "rgs3.meta.surmount",
     swift: "rgs3.meta.swift"
 }
+
+rgs3.activePower = {
+    effect: "rgs3.weapon.effect",
+    equipBonus: "rgs3.weapon.equipBonus",
+    rankBonus: "rgs3.weapon.rankBonus",
+    powerType: "rgs3.weapon.powerType"
+}
+
+rgs3.powerEffects = {
+    effectKey: "rgs3.powerEffects.effectKey",
+    effectLabel: "rgs3.powerEffects.effectLabel",
+    effectValue: "rgs3.powerEffects.effectValue"
+}

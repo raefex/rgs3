@@ -26,7 +26,7 @@
         "rank": 0
       },
       "power": {
-        "effects": {},
+        "powerEffects": {},
         "equipmentBonus": "",
         "rankBonus": ""
       }
@@ -67,7 +67,7 @@
           "rank": 0
         },
         "power": {
-          "effects": {},
+          "powerEffects": {},
           "equipmentBonus": "",
           "rankBonus": ""
         },
