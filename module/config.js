@@ -31,3 +31,4 @@ rgs3.powerEffects = {
     effectLabel: "rgs3.powerEffects.effectLabel",
     effectValue: "rgs3.powerEffects.effectValue"
 }
+

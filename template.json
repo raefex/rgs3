@@ -1,5 +1,364 @@
 {
   "Actor": {
+    "types": ["Dweller","Denizen"],
+    "templates": {
+      "base": {
+        "totalLevel": 3,
+        "boundEssence": 1,
+        "wounds": {
+          "value": 0,
+          "max": 10
+        },
+        "destiny": 1.0,
+        "essence": {
+          "boundActives": 0,
+          "boundPassives": 0,
+          "boundSkills": 0,
+          "boundSocials": 0,
+          "remainingActives": 0,
+          "remainingPassives": 0,
+          "remainingSkills": 0,
+          "remainingSocials": 0
+        },
+        "combatValues": {
+          "physicalProtectionFactor": 0,
+          "physicalDamageFactor": 0,
+          "physicalParry": 0,
+          "mentalProtectionFactor": 0,
+          "mentalDamageFactor": 0,
+          "mentalParry": 0,
+          "spiritualProtectionFactor": 0,
+          "spiritualDamageFactor": 0,
+          "spiritualParry": 0,
+          "heal": 0,
+          "pierce": 0,
+          "reach": 0,
+          "range": 0,
+          "focus": 0
+        },
+        "socialValues": {
+          "innateSocialDefense": 0,
+          "socialProtectionRating": 0,
+          "socialAttackFactor": 0,
+          "socialDefendFactor": 0
+        },
+        "conditions": {},
+        "move": 4,
+        "size": 4,
+        "notes": "Player Notes"
+      }
+    },
+    "Dweller": {
+      "templates": ["base"],
+      "characterInfo": {
+        "characteristics": "",
+        "lifepaths": ""
+      },
+      "voidRune": {
+        "archetype": "",
+        "specialization": "",
+        "trait": "",
+        "activePower": "",
+        "socialAbility": "",
+        "skill": "",
+        "passivePower": ""
+      },
+      "runes": {
+        "tiwaz": {
+          "meaning": "discipline",
+          "trait": "physical",
+          "symbol": "tiwaz",
+          "bound": false,
+          "zone": ""
+        },
+        "berkano": {
+          "meaning": "unseen",
+          "trait": "physical",
+          "symbol": "berkano",
+          "bound": false,
+          "zone": ""
+        },
+        "ehwo": {
+          "meaning": "communication",
+          "trait": "physical",
+          "symbol": "ehwo",
+          "bound": false,
+          "zone": ""
+        },
+        "mann": {
+          "meaning": "self",
+          "trait": "physical",
+          "symbol": "mann",
+          "bound": false,
+          "zone": ""
+        },
+        "claguz": {
+          "meaning": "creative",
+          "trait": "physical",
+          "symbol": "claguz",
+          "bound": false,
+          "zone": ""
+        },
+        "ing": {
+          "meaning": "achievement",
+          "trait": "physical",
+          "symbol": "ing",
+          "bound": false,
+          "zone": ""
+        },
+        "dagaz": {
+          "meaning": "primal & nature",
+          "trait": "physical",
+          "symbol": "dagaz",
+          "bound": false,
+          "zone": ""
+        },
+        "othala": {
+          "meaning": "home",
+          "trait": "physical",
+          "symbol": "othala",
+          "bound": false,
+          "zone": ""
+        },
+        "hagalaz": {
+          "meaning": "storms & chaos",
+          "trait": "mental",
+          "symbol": "hagalaz",
+          "bound": false,
+          "zone": ""
+        },
+        "naudhneed": {
+          "meaning": "desire & value",
+          "trait": "mental",
+          "symbol": "naudhneed",
+          "bound": false,
+          "zone": ""
+        },
+        "isaice": {
+          "meaning": "stasis & cold",
+          "trait": "mental",
+          "symbol": "isaice",
+          "bound": false,
+          "zone": ""
+        },
+        "jethe": {
+          "meaning": "giant",
+          "trait": "mental",
+          "symbol": "jethe",
+          "bound": false,
+          "zone": ""
+        },
+        "eihwas": {
+          "meaning": "distance",
+          "trait": "mental",
+          "symbol": "eihwas",
+          "bound": false,
+          "zone": ""
+        },
+        "pertho": {
+          "meaning": "chance",
+          "trait": "mental",
+          "symbol": "pertho",
+          "bound": false,
+          "zone": ""
+        },
+        "elhaz": {
+          "meaning": "protection",
+          "trait": "mental",
+          "symbol": "elhaz",
+          "bound": false,
+          "zone": ""
+        },
+        "sowsun": {
+          "meaning": "light",
+          "trait": "mental",
+          "symbol": "sowsun",
+          "bound": false,
+          "zone": ""
+        },
+        "fehu": {
+          "meaning": "wealth",
+          "trait": "spiritual",
+          "symbol": "fehu",
+          "bound": false,
+          "zone": ""
+        },
+        "uruz": {
+          "meaning": "strength",
+          "trait": "spiritual",
+          "symbol": "uruz",
+          "bound": false,
+          "zone": ""
+        },
+        "thurisaz": {
+          "meaning": "barrier",
+          "trait": "spiritual",
+          "symbol": "thurisaz",
+          "bound": false,
+          "zone": ""
+        },
+        "cansuz": {
+          "meaning": "death",
+          "trait": "spiritual",
+          "symbol": "cansuz",
+          "bound": false,
+          "zone": ""
+        },
+        "raidho": {
+          "meaning": "journey",
+          "trait": "spiritual",
+          "symbol": "raidho",
+          "bound": false,
+          "zone": ""
+        },
+        "kenaz": {
+          "meaning": "insight",
+          "trait": "spiritual",
+          "symbol": "kenaz",
+          "bound": false,
+          "zone": ""
+        },
+        "gebgift": {
+          "meaning": "gift",
+          "trait": "spiritual",
+          "symbol": "gebgift",
+          "bound": false,
+          "zone": ""
+        },
+        "wunjo": {
+          "meaning": "wind & speed",
+          "trait": "spiritual",
+          "symbol": "wunjo ",
+          "bound": false,
+          "zone": ""
+        }
+      }
+    },
+    "Denizen": {
+      "templates": ["base"],
+      "runes": {
+        "p1": {
+          "trait": "physical",
+          "bound": false,
+          "zone": ""
+        },
+        "p2": {
+          "trait": "physical",
+          "bound": false,
+          "zone": ""
+        },
+        "p3": {
+          "trait": "physical",
+          "bound": false,
+          "zone": ""
+        },
+        "p4": {
+          "trait": "physical",
+          "bound": false,
+          "zone": ""
+        },
+        "p5": {
+          "trait": "physical",
+          "bound": false,
+          "zone": ""
+        },
+        "p6": {
+          "trait": "physical",
+          "bound": false,
+          "zone": ""
+        },
+        "p7": {
+          "trait": "physical",
+          "bound": false,
+          "zone": ""
+        },
+        "p8": {
+          "trait": "physical",
+          "bound": false,
+          "zone": ""
+        },
+        "m1": {
+          "trait": "mental",
+          "bound": false,
+          "zone": ""
+        },
+        "m2": {
+          "trait": "mental",
+          "bound": false,
+          "zone": ""
+        },
+        "m3": {
+          "trait": "mental",
+          "bound": false,
+          "zone": ""
+        },
+        "m4": {
+          "trait": "mental",
+          "bound": false,
+          "zone": ""
+        },
+        "m5": {
+          "trait": "mental",
+          "bound": false,
+          "zone": ""
+        },
+        "m6": {
+          "trait": "mental",
+          "bound": false,
+          "zone": ""
+        },
+        "m7": {
+          "trait": "mental",
+          "bound": false,
+          "zone": ""
+        },
+        "m8": {
+          "trait": "mental",
+          "bound": false,
+          "zone": ""
+        },
+        "s1": {
+          "trait": "spiritual",
+          "bound": false,
+          "zone": ""
+        },
+        "s2": {
+          "trait": "spiritual",
+          "bound": false,
+          "zone": ""
+        },
+        "s3": {
+          "trait": "spiritual",
+          "bound": false,
+          "zone": ""
+        },
+        "s4": {
+          "trait": "spiritual",
+          "bound": false,
+          "zone": ""
+        },
+        "s5": {
+          "trait": "spiritual",
+          "bound": false,
+          "zone": ""
+        },
+        "s6": {
+          "trait": "spiritual",
+          "bound": false,
+          "zone": ""
+        },
+        "s7": {
+          "trait": "spiritual",
+          "bound": false,
+          "zone": ""
+        },
+        "s8": {
+          "trait": "spiritual",
+          "bound": false,
+          "zone": ""
+        }
+      }
+    }
   },
   "Item": {
     "types": [
@@ -29,18 +388,21 @@
         "powerEffects": {},
         "equipmentBonus": "",
         "rankBonus": ""
+      },
+      "desc": {
+        "description": ""
       }
     },
     "description": "",
     "Active": {
-      "templates": ["runeType","talent","power"],
+      "templates": ["runeType","talent","power","desc"],
       "powerTypes": {}
     },
     "Skill": {
-      "templates": ["runeType","talent"]
+      "templates": ["runeType","talent","desc"]
     },
     "Social": {
-      "templates": ["runeType","talent","power"],
+      "templates": ["runeType","talent","power","desc"],
       "actionType": ""
     },
     "Equipment": {
@@ -109,7 +471,7 @@
       }
     },
     "Passive": {
-      "templates": ["runeType"],
+      "templates": ["runeType","desc"],
       "passiveType": "",
       "nonCombat": "",
       "effects": {}

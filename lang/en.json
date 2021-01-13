@@ -33,6 +33,20 @@
             "effectKey": "Effect #",
             "effectLabel": "Effect Type",
             "effectValue": "Value"
+        },
+        "mainStats": {
+            "wounds": "Current Wounds",
+            "effHP": "Max Wounds",
+            "lvl": "Character Level",
+            "destiny": "Destiny",
+            "essence": "Essence"
+        },
+        "charStats": {
+            "move": "Move",
+            "size": "Size",
+            "characteristics": "Personality",
+            "lifepaths": "Lifepaths",
+            "charNotes": "Character Notes"
         }
     }
 }

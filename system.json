@@ -10,7 +10,7 @@
     "rgs3.js"
   ],
   "styles": [
-    "rgs3.css"
+    "styles/rgs3.css"
   ],
   "packs": [
 
@@ -24,5 +24,6 @@
   ],
   "gridDistance": 2,
   "gridUnits": "m",
+  "primaryTokenAttribute": "wounds.value",
   "initiative": ""
 }

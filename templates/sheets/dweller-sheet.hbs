@@ -1,0 +1,96 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
+        <div class="header-fields">
+            <h1 class="charname">
+                <input name="name" type="text" value="{{actor.name}}" />
+            </h1>
+            <div class="resources">
+                <div class="resource">
+                    <label for="data.wounds.value">{{localize "rgs3.mainStats.wounds"}}</label>
+                    <span>{{data.wounds.value}}</span>
+                </div>
+                <div class="resource">
+                    <label for="data.wounds.max">{{localize "rgs3.mainStats.effHP"}}</label>
+                    <span>{{data.wounds.max}}</span>
+                </div>
+                <div class="resource">
+                    <label for="data.totalLevel">{{localize "rgs3.mainStats.lvl"}}</label>
+                    <input name="data.totalLevel" type="text" value="{{data.totalLevel}}" data-dtype="Number" />
+                </div>
+                <div class="resource">
+                    <label for="data.destiny">{{localize "rgs3.mainStats.destiny"}}</label>
+                    <span>{{data.destiny}}</span>
+                </div>
+                <div class="resource">
+                    <label for="data.boundEssence">{{localize "rgs3.mainStats.essence"}}</label>
+                    <span>{{data.boundEssence}}</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="charInfo">Character Info</a>
+        <a class="item" data-tab="actives">Active Powers</a>
+        <a class="item" data-tab="socials">Social Powers</a>
+        <a class="item" data-tab="skills">Skills</a>
+        <a class="item" data-tab="passives">Passive Powers</a>
+        <a class="item" data-tab="equipment">Equipment</a>
+        <a class="item" data-tab="actions">Actions</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Character Info Tab--}}
+        <div class="tab charInfo" data-group="primary" data-tab="charInfo">
+            <div class="minor-stats">
+                <label for="data.move">{{localize "rgs3.charStats.move"}}: </label>
+                <span>{{data.move}}</span>
+                <label for="data.size">{{localize "rgs3.charStats.size"}}:</label>
+                <span>{{data.size}}</span>
+            </div>
+            <label for="data.characterInfo.characteristics">{{localize "rgs3.charStats.characteristics"}}:</label>
+            <textarea rows="4">{{data.characterInfo.characteristics}}</textarea>
+            <label for="data.characterInfo.lifepaths">{{localize "rgs3.charStats.lifepaths"}}:</label>
+            <textarea rows="3">{{data.characterInfo.lifepaths}}</textarea>
+            <label for="data.notes">{{localize "rgs3.charStats.charNotes"}}</label>
+            {{editor content=data.notes target="data.notes" button=true owner=owner editable=editable}}
+        </div>
+
+        {{!-- Active Powers Tab--}}
+        <div class="tab actives" data-group="primary" data-tab="actives">
+            <p>Active Tab</p>
+        </div>
+
+        {{!-- Social Powers Tab--}}
+        <div class="tab socials" data-group="primary" data-tab="socials">
+            <p>Social Tab</p>
+        </div>
+
+        {{!-- Skills Tab--}}
+        <div class="tab skills" data-group="primary" data-tab="skills">
+            <p>Skills Tab</p>
+        </div>
+
+        {{!-- Passive Powers Tab--}}
+        <div class="tab passives" data-group="primary" data-tab="passives">
+            <p>Passive Tab</p>
+        </div>
+
+        {{!-- Equipment Tab --}}
+        <div class="tab equipment" data-group="primary" data-tab="equipment">
+            <p>Equipement Tab</p>
+        </div>
+
+        {{!-- Action Tab--}}
+        <div class="tab actions" data-group="primary" data-tab="actions">
+            <p>Action Jackson</p>
+        </div>
+
+    </section>
+</form>
