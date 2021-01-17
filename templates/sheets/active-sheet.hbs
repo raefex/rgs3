@@ -40,7 +40,7 @@
         </table>
     </div>
     <div class="power-description">
-        <textarea>{{data.description}}</textarea>
+        <textarea name="data.description">{{data.description}}</textarea>
     </div>
     <div class="power-bonuses">
         <label for="data.equipmentBonus">{{localize "rgs3.weapon.equipBonus"}}</label>
@@ -49,11 +49,43 @@
         <input name="data.rankBonus" type="text" value="{{data.rankBonus}}" />
     </div>
     <div class="effect-list">
-        <header class="effects-header flexrow">
-            <span class="effect-key">{{localize "rgs3.powerEffects.effectKey"}}</span>
-            <span class="effect-label">{{localize "rgs3.powerEffects.effectLabel"}}</span>
-            <span class="effect-value">{{localize "rgs3.powerEffects.effectValue"}}</span>
-            <a class="effect-create"><i class="fas fa-plus"></i></a>
-        </header>
+        <table>
+            <tr>
+                <th>
+                    <span class="effect-key">{{localize "rgs3.powerEffects.effectKey"}}</span>
+                </th>
+                <th>
+                    <span class="effect-label">{{localize "rgs3.powerEffects.effectLabel"}}</span>
+                </th>
+                <th>
+                    <span class="effect-value">{{localize "rgs3.powerEffects.effectValue"}}</span>
+                </th>
+                <th>
+                    <span class="effect-type">{{localize "rgs3.powerEffects.effectType"}}</span>
+                </th>
+                <th>
+                     <a class="effect-create"><i class="fas fa-plus"></i></a>
+                </th>
+            </tr>
+            {{#each data.powerEffects as |effct key|}}
+            <tr class="power-effect" data-item-id="{{key}}">
+                <td>
+                    <span>{{key}}</span>
+                </td>
+                <td>
+                    <input name="data.powerEffects.{{key}}.effect" type="text" value="{{effct.effect}}" />
+                </td>
+                <td>
+                    <input name="data.powerEffects.{{key}}.value" type="text" value="{{effct.value}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.powerEffects.{{key}}.type" type="text" value="{{effct.type}}" />
+                </td>
+                <td>
+                    <a class="effect-delete"><i class="fas fa-trash"></i></a>
+                </td>
+            </tr>
+            {{/each}}
+        </table>
     </div>
 </form>

@@ -16,7 +16,8 @@ rgs3.metaNames = {
     resist: "rgs3.meta.resist",
     sinister: "rgs3.meta.sinister",
     surmount: "rgs3.meta.surmount",
-    swift: "rgs3.meta.swift"
+    swift: "rgs3.meta.swift",
+    weapon: "rgs3.meta.weapon"
 }
 
 rgs3.activePower = {

@@ -21,7 +21,8 @@
             "resist": "Resist",
             "sinister": "Sinister",
             "surmount": "Surmount",
-            "swift": "Swift"
+            "swift": "Swift",
+            "weapon": "Weapon"
         },
         "weapon": {
             "effect": "Effect(s)",
@@ -31,8 +32,9 @@
         },
         "powerEffects": {
             "effectKey": "Effect #",
-            "effectLabel": "Effect Type",
-            "effectValue": "Value"
+            "effectLabel": "Effect Name",
+            "effectValue": "Value",
+            "effectType": "Type"
         },
         "mainStats": {
             "wounds": "Current Wounds",
@@ -47,6 +49,17 @@
             "characteristics": "Personality",
             "lifepaths": "Lifepaths",
             "charNotes": "Character Notes"
+        },
+        "rune": {
+            "symbol": "Symbol",
+            "trait": "Trait"
+        },
+        "dialog": {
+            "powerBind": "Power Bind",
+            "actions": {
+                "bind": "Bind",
+                "cancel": "Cancel"
+            }
         }
     }
 }

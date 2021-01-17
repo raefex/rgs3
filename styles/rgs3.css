@@ -1,11 +1,11 @@
 .rgs3 {
   /* Sheet Tabs */
   /* Character Info */
+  /* Power (Items) Info */
 }
 .rgs3 .window-content {
   height: 100%;
   padding: 5px;
-  overflow-y: hidden;
 }
 .rgs3 form {
   height: 100%;
@@ -28,7 +28,7 @@
   height: 100px;
 }
 .rgs3 .sheet-header h1.charname {
-  height: 50px;
+  height: 45px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
@@ -75,11 +75,51 @@
 }
 .rgs3 .charInfo {
   height: 100%;
-  display: flex;
   flex-direction: column;
 }
 .rgs3 .charInfo .minor-stats {
-  display: flex;
   flex-direction: row;
   align-content: space-between;
+}
+.rgs3 .rune-grid {
+  display: grid;
+  grid-template-columns: 50px 500px;
+  grid-gap: 10px;
+  overflow-y: auto;
+}
+.rgs3 .rune-grid .power-card {
+  display: flex;
+  flex-direction: column;
+}
+.rgs3 .rune-grid .power-card .meta-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+.rgs3 .rune-grid .power-card .meta-list .physical-meta {
+  color: red;
+  border: 1px solid currentcolor;
+  width: 50px;
+}
+.rgs3 .rune-grid .power-card .meta-list .mental-meta {
+  color: blue;
+  border: 1px solid currentcolor;
+  width: 50px;
+}
+.rgs3 .rune-grid .power-card .meta-list .spiritual-meta {
+  color: green;
+  border: 1px solid currentcolor;
+  width: 50px;
+}
+.rgs3 .unbound-power {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.rgs3 .effect-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.rgs3 .effect-list .input {
+  width: 40px;
 }

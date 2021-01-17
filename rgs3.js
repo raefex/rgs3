@@ -2,6 +2,14 @@ import { rgs3 } from "./module/config.js";
 import RGS3ItemSheet from "./module/sheets/RGS3ItemSheet.js";
 import RGS3DwellerSheet from "./module/sheets/RGS3DwellerSheet.js";
 
+async function preloadHandlebarsTemplates() {
+    const templatePaths = [
+        "systems/rgs3/templates/partials/power-card.hbs"
+    ];
+
+    return loadTemplates(templatePaths);
+}
+
 Hooks.once("init", function() {
     console.log("rgs3 | Initialising Fate of the Norns RGS System");
 
@@ -12,4 +20,6 @@ Hooks.once("init", function() {
 
     Actors.unregisterSheet("core", ActorSheet);
     Actors.registerSheet("rgs3", RGS3DwellerSheet, { makeDefault: true });
+
+    preloadHandlebarsTemplates();
 });

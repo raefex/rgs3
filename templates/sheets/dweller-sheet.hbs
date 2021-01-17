@@ -55,16 +55,46 @@
                 <span>{{data.size}}</span>
             </div>
             <label for="data.characterInfo.characteristics">{{localize "rgs3.charStats.characteristics"}}:</label>
-            <textarea rows="4">{{data.characterInfo.characteristics}}</textarea>
+            <textarea name="data.characterInfo.characteristics" rows="4">{{data.characterInfo.characteristics}}</textarea>
             <label for="data.characterInfo.lifepaths">{{localize "rgs3.charStats.lifepaths"}}:</label>
-            <textarea rows="3">{{data.characterInfo.lifepaths}}</textarea>
+            <textarea name="data.characterInfo.lifepaths" rows="3">{{data.characterInfo.lifepaths}}</textarea>
             <label for="data.notes">{{localize "rgs3.charStats.charNotes"}}</label>
             {{editor content=data.notes target="data.notes" button=true owner=owner editable=editable}}
         </div>
 
         {{!-- Active Powers Tab--}}
         <div class="tab actives" data-group="primary" data-tab="actives">
-            <p>Active Tab</p>
+            <div class="rune-grid">
+                <div align="center">Image</div>
+                <div>Power Description</div>
+
+                {{#each activesToDisplay as |item|}}
+                <div class="rune-img">
+                    <img src="/systems/rgs3/images/runes/{{item.data.rune.symbol}}.jpg" title="{{item.data.rune.symbol}}" height="70" width="50" />
+                </div>
+                <div>
+                    {{> "systems/rgs3/templates/partials/power-card.hbs"}}
+                </div>
+                {{/each}}
+            </div>
+            <div class="unbound-section">
+                <select name="data.selectedPower">
+                {{#select data.selectedPower}}
+                {{#each actives as |active id|}}
+                <option value="{{active._id}}">{{active.name}}</option>
+                {{/each}}
+                {{/select}}
+                </select>
+                <select name="data.selectedRune">
+                {{#select data.selectedRune}}
+                {{#each unboundActiveRunes as |rune|}}
+                <option value="{{rune.symbol}}">{{rune.symbol}}</option>
+                {{/each}}
+                {{/select}}
+                </select>
+                <a class="power-bind"><i class="fas fa-lock-open"></i></a>
+                
+            </div>
         </div>
 
         {{!-- Social Powers Tab--}}

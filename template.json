@@ -50,6 +50,8 @@
     },
     "Dweller": {
       "templates": ["base"],
+      "selectedRune": "",
+      "selectedPower": "",
       "characterInfo": {
         "characteristics": "",
         "lifepaths": ""
@@ -69,168 +71,288 @@
           "trait": "physical",
           "symbol": "tiwaz",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "berkano": {
           "meaning": "unseen",
           "trait": "physical",
           "symbol": "berkano",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "ehwo": {
           "meaning": "communication",
           "trait": "physical",
           "symbol": "ehwo",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "mann": {
           "meaning": "self",
           "trait": "physical",
           "symbol": "mann",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "claguz": {
           "meaning": "creative",
           "trait": "physical",
           "symbol": "claguz",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "ing": {
           "meaning": "achievement",
           "trait": "physical",
           "symbol": "ing",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "dagaz": {
           "meaning": "primal & nature",
           "trait": "physical",
           "symbol": "dagaz",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "othala": {
           "meaning": "home",
           "trait": "physical",
           "symbol": "othala",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "hagalaz": {
           "meaning": "storms & chaos",
           "trait": "mental",
           "symbol": "hagalaz",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "naudhneed": {
           "meaning": "desire & value",
           "trait": "mental",
           "symbol": "naudhneed",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "isaice": {
           "meaning": "stasis & cold",
           "trait": "mental",
           "symbol": "isaice",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "jethe": {
           "meaning": "giant",
           "trait": "mental",
           "symbol": "jethe",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "eihwas": {
           "meaning": "distance",
           "trait": "mental",
           "symbol": "eihwas",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "pertho": {
           "meaning": "chance",
           "trait": "mental",
           "symbol": "pertho",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "elhaz": {
           "meaning": "protection",
           "trait": "mental",
           "symbol": "elhaz",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "sowsun": {
           "meaning": "light",
           "trait": "mental",
           "symbol": "sowsun",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "fehu": {
           "meaning": "wealth",
           "trait": "spiritual",
           "symbol": "fehu",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "uruz": {
           "meaning": "strength",
           "trait": "spiritual",
           "symbol": "uruz",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "thurisaz": {
           "meaning": "barrier",
           "trait": "spiritual",
           "symbol": "thurisaz",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "cansuz": {
           "meaning": "death",
           "trait": "spiritual",
           "symbol": "cansuz",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "raidho": {
           "meaning": "journey",
           "trait": "spiritual",
           "symbol": "raidho",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "kenaz": {
           "meaning": "insight",
           "trait": "spiritual",
           "symbol": "kenaz",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "gebgift": {
           "meaning": "gift",
           "trait": "spiritual",
           "symbol": "gebgift",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "wunjo": {
           "meaning": "wind & speed",
           "trait": "spiritual",
           "symbol": "wunjo ",
           "bound": false,
-          "zone": ""
+          "boundActive": false,
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         }
       }
     },
@@ -240,122 +362,217 @@
         "p1": {
           "trait": "physical",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "p2": {
           "trait": "physical",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "p3": {
           "trait": "physical",
           "bound": false,
-          "zone": ""
+          "zone": "","activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "p4": {
           "trait": "physical",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "p5": {
           "trait": "physical",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "p6": {
           "trait": "physical",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "p7": {
           "trait": "physical",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "p8": {
           "trait": "physical",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "m1": {
           "trait": "mental",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "m2": {
           "trait": "mental",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "m3": {
           "trait": "mental",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "m4": {
           "trait": "mental",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "m5": {
           "trait": "mental",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "m6": {
           "trait": "mental",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "m7": {
           "trait": "mental",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "m8": {
           "trait": "mental",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "s1": {
           "trait": "spiritual",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "s2": {
           "trait": "spiritual",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "s3": {
           "trait": "spiritual",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "s4": {
           "trait": "spiritual",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "s5": {
           "trait": "spiritual",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "s6": {
           "trait": "spiritual",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "s7": {
           "trait": "spiritual",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         },
         "s8": {
           "trait": "spiritual",
           "bound": false,
-          "zone": ""
+          "zone": "",
+          "activePower": "",
+          "passivePower": "",
+          "socialPower": "",
+          "skill": ""
         }
       }
     }
