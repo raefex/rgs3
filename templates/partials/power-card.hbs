@@ -2,6 +2,7 @@
     <div class="power-name">
         {{name}}
     </div>
+    {{#if data.metas}}
     <div class="meta-list">
         <div class="physical-meta">
             {{data.metas.physical}}
@@ -13,6 +14,7 @@
             {{data.metas.spiritual}}
         </div>
     </div>
+    {{/if}}
 </div>
 <div class="power-description">
     {{data.description}}

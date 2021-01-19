@@ -4,7 +4,8 @@ import RGS3DwellerSheet from "./module/sheets/RGS3DwellerSheet.js";
 
 async function preloadHandlebarsTemplates() {
     const templatePaths = [
-        "systems/rgs3/templates/partials/power-card.hbs"
+        "systems/rgs3/templates/partials/power-card.hbs",
+        "systems/rgs3/templates/partials/passive-card.hbs"
     ];
 
     return loadTemplates(templatePaths);

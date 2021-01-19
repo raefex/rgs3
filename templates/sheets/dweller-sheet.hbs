@@ -78,38 +78,124 @@
                 {{/each}}
             </div>
             <div class="unbound-section">
-                <select name="data.selectedPower">
-                {{#select data.selectedPower}}
+                <select name="data.selectedValues.selectedActivePower">
+                {{#select data.selectedValues.selectedActivePower}}
                 {{#each actives as |active id|}}
                 <option value="{{active._id}}">{{active.name}}</option>
                 {{/each}}
                 {{/select}}
                 </select>
-                <select name="data.selectedRune">
-                {{#select data.selectedRune}}
+                <select name="data.selectedValues.selectedActiveRune">
+                {{#select data.selectedValues.selectedActiveRune}}
                 {{#each unboundActiveRunes as |rune|}}
                 <option value="{{rune.symbol}}">{{rune.symbol}}</option>
                 {{/each}}
                 {{/select}}
                 </select>
-                <a class="power-bind"><i class="fas fa-lock-open"></i></a>
-                
+                <a class="active-bind"><i class="fas fa-lock-open"></i></a>
             </div>
         </div>
 
         {{!-- Social Powers Tab--}}
         <div class="tab socials" data-group="primary" data-tab="socials">
-            <p>Social Tab</p>
+            <div class="rune-grid">
+                <div align="center">Image</div>
+                <div>Power Description</div>
+
+                {{#each socialsToDisplay as |item|}}
+                <div class="rune-img">
+                    <img src="/systems/rgs3/images/runes/{{item.data.rune.symbol}}.jpg" title="{{item.data.rune.symbol}}" height="70" width="50" />
+                </div>
+                <div>
+                    {{> "systems/rgs3/templates/partials/power-card.hbs"}}
+                </div>
+                {{/each}}
+            </div>
+            <div class="unbound-section">
+                <select name="data.selectedValues.selectedSocialPower">
+                {{#select data.selectedValues.selectedSocialPower}}
+                {{#each socials as |social id|}}
+                <option value="{{social._id}}">{{social.name}}</option>
+                {{/each}}
+                {{/select}}
+                </select>
+                <select name="data.selectedValues.selectedSocialRune">
+                {{#select data.selectedValues.selectedSocialRune}}
+                {{#each unboundSocialRunes as |rune|}}
+                <option value="{{rune.symbol}}">{{rune.symbol}}</option>
+                {{/each}}
+                {{/select}}
+                </select>
+                <a class="social-bind"><i class="fas fa-lock-open"></i></a>
+            </div>
         </div>
 
         {{!-- Skills Tab--}}
         <div class="tab skills" data-group="primary" data-tab="skills">
-            <p>Skills Tab</p>
+            <div class="rune-grid">
+                <div align="center">Image</div>
+                <div>Power Description</div>
+
+                {{#each skillsToDisplay as |item|}}
+                <div class="rune-img">
+                    <img src="/systems/rgs3/images/runes/{{item.data.rune.symbol}}.jpg" title="{{item.data.rune.symbol}}" height="70" width="50" />
+                </div>
+                <div>
+                    {{> "systems/rgs3/templates/partials/power-card.hbs"}}
+                </div>
+                {{/each}}
+            </div>
+            <div class="unbound-section">
+                <select name="data.selectedValues.selectedSkillPower">
+                {{#select data.selectedValues.selectedSkillPower}}
+                {{#each skills as |skill id|}}
+                <option value="{{skill._id}}">{{skill.name}}</option>
+                {{/each}}
+                {{/select}}
+                </select>
+                <select name="data.selectedValues.selectedSkillRune">
+                {{#select data.selectedValues.selectedSkillRune}}
+                {{#each unboundSkillRunes as |rune|}}
+                <option value="{{rune.symbol}}">{{rune.symbol}}</option>
+                {{/each}}
+                {{/select}}
+                </select>
+                <a class="skill-bind"><i class="fas fa-lock-open"></i></a>
+            </div>
         </div>
 
         {{!-- Passive Powers Tab--}}
         <div class="tab passives" data-group="primary" data-tab="passives">
-            <p>Passive Tab</p>
+            <div class="rune-grid">
+                <div align="center">Image</div>
+                <div>Power Description</div>
+
+                {{#each passivesToDisplay as |item|}}
+                <div class="rune-img">
+                    <img src="/systems/rgs3/images/runes/{{item.data.rune.symbol}}.jpg" title="{{item.data.rune.symbol}}" height="70" width="50" />
+                </div>
+                <div>
+                    {{> "systems/rgs3/templates/partials/passive-card.hbs"}}
+                </div>
+                {{/each}}
+            </div>
+            <div class="unbound-section">
+                <select name="data.selectedValues.selectedPassivePower">
+                {{#select data.selectedValues.selectedPassivePower}}
+                {{#each passives as |passive id|}}
+                <option value="{{passive._id}}">{{passive.name}}</option>
+                {{/each}}
+                {{/select}}
+                </select>
+                <select name="data.selectedValues.selectedPassiveRune">
+                {{#select data.selectedValues.selectedPassiveRune}}
+                {{#each unboundPassiveRunes as |rune|}}
+                <option value="{{rune.symbol}}">{{rune.symbol}}</option>
+                {{/each}}
+                {{/select}}
+                </select>
+                <a class="passive-bind"><i class="fas fa-lock-open"></i></a>
+            </div>
         </div>
 
         {{!-- Equipment Tab --}}
