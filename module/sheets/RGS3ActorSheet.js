@@ -274,9 +274,6 @@ export default class RGS3ActorSheet extends ActorSheet {
         let actor = game.actors.get(this.object.data._id);
         let data = actor.data;
 
-        //reset void
-        actor.update( {"data.void.zone" : "inHand" } );
-
         let essenceBag = this.object.data.data.essenceBag;
         let runes = data.data.runes;
 
@@ -288,7 +285,8 @@ export default class RGS3ActorSheet extends ActorSheet {
             }
         }
 
-        actor.update({"data.runes": runes});
+        // save new rune location and reset void rune
+        actor.update({"data.runes": runes, "data.void.zone": "inHand"});
         console.log("Runes Cleaned Up");
     }
 
@@ -300,9 +298,6 @@ export default class RGS3ActorSheet extends ActorSheet {
         let actor = game.actors.get(this.object.data._id);
         let data = actor.data;
 
-        //reset void
-        actor.update( {"data.void.zone" : "inHand" } );
-
         let essenceBag = this.object.data.data.essenceBag;
         let runes = data.data.runes;
 
@@ -310,7 +305,7 @@ export default class RGS3ActorSheet extends ActorSheet {
             runes[eb].zone = "inBag";
         }
 
-        actor.update({"data.runes": runes});
+        actor.update({"data.runes": runes, "data.void.zone": "inHand"});
         console.log("All Runes Back In Bag");
     }
 
