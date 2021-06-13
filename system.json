@@ -1,0 +1,28 @@
+{
+  "name": "rgs3",
+  "title": "Runic Game System v3",
+  "description": "A system for playing Fate of the Norns games created by Andrew Valkauskas.",
+  "version": "0.0.1",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "0.8.6",
+  "templateVersion": 2,
+  "author": "Raefex",
+  "esmodules": ["rgs3.js"],
+  "styles": ["rgs3.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 2,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": null,
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": ""
+}

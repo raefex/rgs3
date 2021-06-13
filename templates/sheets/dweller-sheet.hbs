@@ -1,0 +1,189 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!== Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" title="{{actor.name}}" height="100" width="100" data-edit="img"/>
+        <div class="header-fields">
+            <h1>
+                <input name="name" type="text" value="{{actor.name}}" />
+            </h1>
+            <div class="sub-name">
+                <label for="data.archetype">{{localize "rgs3.headerFields.archetype"}}</label>
+                <div class="health">
+                    <label>{{localize "rgs3.headerFields.health"}}</label>
+                    <span>{{data.health.value}} / {{data.health.max}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="attributes">
+            <div class="attribute-header">
+                <label>({{localize "rgs3.headerFields.total"}}/{{localize "rgs3.headerFields.spent"}})</label>
+            </div>
+            <div class="level">
+                <label>{{localize "rgs3.headerFields.level"}}</label>
+            </div>
+            <div class="level">
+                <span>{{data.level.value}} / {{data.level.spent}}</span>
+            </div>
+            <div class="level">
+                <a class="level-purchase"><i class="fas fa-plus"></i></a>
+                <a class="level-remove"><i class="fas fa-minus"></i></a>
+            </div>
+            <div class="destiny">
+                <label>{{localize "rgs3.headerFields.destiny"}}</label>
+            </div>
+            <div class="destiny">
+                <span>{{data.destiny}}</span>
+            </div>
+            <div class="destiny">
+                <a class="destiny-purchase"><i class="fas fa-plus"></i></a>
+                <a class="destiny-remove"><i class="fas fa-minus"></i></a>
+            </div>
+            <div class="essence">
+                <label>{{localize "rgs3.headerFields.essence"}}</label>
+            </div>
+            <div class="essence">
+                <span>{{data.essence}}</span>
+            </div>
+            <div class="essence">
+                <a class="bind-rune">{{localize "rgs3.headerFields.bindRunes"}}</a>
+            </div>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="nav-item" data-tab="runeMap">{{localize "rgs3.navFields.runeMap"}}</a>
+        <a class="nav-item" data-tab="playMat">{{localize "rgs3.navFields.playMat"}}</a>
+        <a class="nav-item" data-tab="equipment">{{localize "rgs3.navFields.equip"}}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Rune Map --}}
+        <div class="tab" data-group="primary" data-tab="runeMap">
+            <div class="rune-map">
+
+                <label>{{localize "rgs3.runeGrid.rune"}}</label>
+                <label>{{localize "rgs3.runeGrid.activePower"}}</label>
+                <label>{{localize "rgs3.runeGrid.passivePower"}}</label>
+                <label>{{localize "rgs3.runeGrid.socialPower"}}</label>
+                <label>{{localize "rgs3.runeGrid.skillPower"}}</label>
+
+                {{#each data.runes as |rune id|}}
+                    {{#if rune.bound}}
+                    <div class="rune-map-display">
+                        <img src="/systems/rgs3/images/runes/{{id}}.png" title="{{id}}" height="75" width="50" />
+                    </div>
+                    <input name="data.runes.{{id}}.activePower" type="text" value="{{rune.activePower}}" />
+                    <input name="data.runes.{{id}}.passivePower" type="text" value="{{rune.passivePower}}" />
+                    <input name="data.runes.{{id}}.socialPower" type="text" value="{{rune.socialPower}}" />
+                    <input name="data.runes.{{id}}.skillPower" type="text" value="{{rune.skillPower}}" />
+                    {{/if}}
+                {{/each}}
+                </div>
+        </div>
+
+        {{!-- Play Mat --}}
+        <div class="tab play-mat" data-group="primary" data-tab="playMat">
+            <div class="rune-actions">
+                <div class="bag" data-zone="inBag">
+                        <img src="/systems/rgs3/images/sack_icon.png" title="{{localize "rgs3.headerFields.essenceBag"}}" height="30" width="30" />
+                        {{localize "rgs3.headerFields.essenceBag"}} ({{inBagSize}})
+                </div>
+                <div class="wyrd">
+                    <h1 title="{{localize "rgs3.toolTips.wyrd"}}">{{localize "rgs3.headerFields.wyrd"}}</h1>
+                </div>
+                <div class="cleanup">
+                    <h1 title="{{localize "rgs3.toolTips.cleanUp"}}">{{localize "rgs3.headerFields.cleanUp"}}</h1>
+                </div>
+                <div class="heal-all">
+                    <h1 title="{{localize "rgs3.toolTips.healAll"}}">{{localize "rgs3.headerFields.healAll"}}</h1>
+                </div>
+            </div>
+            <div class="zone-list">                
+                <div class="zone" data-zone="inPlay">
+                    <div class="zone-label">{{localize "rgs3.headerFields.inPlay"}}</div>
+                    {{#if (eq data.void.zone "inPlay")}}
+                        <div class="rune" id="void">
+                            <img src="/systems/rgs3/images/runes/void.png" title="void" height="75" width="50" />
+                        </div>
+                    {{/if}}
+                    {{#each inPlayZone as |rune|}}
+                        <div class="rune" id="{{rune}}">
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                        </div>
+                    {{/each}}
+                </div>
+                <div class="zone" data-zone="contingency">
+                    <div class="zone-label">{{localize "rgs3.headerFields.contingency"}}</div>
+                    {{#if (eq data.void.zone "contingency")}}
+                        <div class="rune" id="void">
+                            <img src="/systems/rgs3/images/runes/void.png" title="void" height="75" width="50" />
+                        </div>
+                    {{/if}}
+                    {{#each contingencyZone as |rune|}}
+                        <div class="rune" id="{{rune}}">
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                        </div>
+                    {{/each}}
+                </div>
+                <div class="zone" data-zone="inHand">
+                    <div class="zone-label">{{localize "rgs3.headerFields.inHand"}}</div>
+                    {{#if (eq data.void.zone "inHand")}}
+                        <div class="rune" id="void">
+                            <img src="/systems/rgs3/images/runes/void.png" title="void" height="75" width="50" />
+                        </div>
+                    {{/if}}
+                    {{#each inHandZone as |rune|}}
+                        <div class="rune" id="{{rune}}">
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                        </div>
+                    {{/each}}
+                </div>
+                <div class="zone stun" data-zone="stun">
+                    <div class="zone-label">{{localize "rgs3.headerFields.stun"}}</div>
+                    <a class="dmg-rune" title="{{localize "rgs3.toolTips.stun"}}"><i class="fas fa-minus-circle"></i></a>
+                    {{#each stunZone as |rune|}}
+                        <div class="rune" id="{{rune}}">
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                        </div>
+                    {{/each}}
+                </div>
+                <div class="zone" data-zone="wounds">
+                    <div class="zone-label">{{localize "rgs3.headerFields.wounds"}}</div>
+                    {{#each woundZone as |rune|}}
+                        <div class="rune" id="{{rune}}">
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                        </div>
+                    {{/each}}
+                </div>
+                <div class="zone" data-zone="death">
+                    <div class="zone-label">{{localize "rgs3.headerFields.death"}}</div>
+                    {{#each deathZone as |rune|}}
+                        <div class="rune" id="{{rune}}">
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                        </div>
+                    {{/each}}
+                </div>
+                <div class="zone" data-zone="drain">
+                    <div class="zone-label">{{localize "rgs3.headerFields.drain"}}</div>
+                    {{#each drainZone as |rune|}}
+                        <div class="rune" id="{{rune}}">
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        {{!-- Equipment --}}
+        <div class="tab equipment" data-group="primary" data-tab="equipment">
+            <p>
+                EQUIPMENT!!!
+            </p>
+        </div>
+
+    </section>
+</form>

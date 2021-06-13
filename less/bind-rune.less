@@ -1,0 +1,17 @@
+.rgs3 {
+    .rune-grid {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-auto-flow: column;
+
+        .rune-display {
+            display: flex;
+        }
+
+        .unbound img {
+            filter: brightness(50%);
+            background-color: darkgrey;
+        }
+    }
+}

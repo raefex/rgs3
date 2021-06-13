@@ -1,0 +1,71 @@
+{
+    "rgs3": {
+        "trait": {
+            "physical": "Physical",
+            "mental": "Mental",
+            "spiritual": "Spiritual"
+        },
+        "meta": {
+            "abate": "Abate",
+            "aid": "Aid",
+            "amplify": "Amplify",
+            "area": "Area",
+            "dodge": "Dodge",
+            "efficient": "Efficient",
+            "element": "Element",
+            "invert": "Invert",
+            "maintain": "Maintain",
+            "mastery": "Mastery",
+            "multi": "Multi",
+            "range": "Range",
+            "resist": "Resist",
+            "sinister": "Sinister",
+            "surmount": "Surmount",
+            "swift": "Swift",
+            "weapon": "Weapon"
+        },
+        "headerFields": {
+            "archetype": "ARCHETYPE",
+            "health": "HEALTH",
+            "level": "LEVEL",
+            "essence": "ESSENCE",
+            "destiny": "DESTINY",
+            "total": "TOTAL",
+            "spent": "SPENT",
+            "bindRunes": "BIND RUNES",
+            "essenceBag": "ESSENCE BAG",
+            "wyrd": "WYRD",
+            "cleanUp": "CLEAN UP",
+            "healAll": "HEAL ALL",
+            "inPlay": "IN-PLAY",
+            "contingency": "CONTINGENCY",
+            "inHand": "IN-HAND",
+            "stun": "STUN",
+            "wounds": "WOUNDS",
+            "death": "DEATH",
+            "drain": "DRAIN"
+        },
+        "toolTips": {
+            "wyrd": "Pull Runes Equal to Destiny from Essence Bag to In-Hand",
+            "cleanUp": "Put Runes from In-Play, In-Hand, and Contingency back to Essence Bag",
+            "healAll": "Put All Runes back into Essence Bag",
+            "stun": "Pull one Rune from Essence Bag to Stun"
+        },
+        "essenceAssignment": {
+            "title": "Assign Runes for Essence",
+            "submit": "Save Current Selection"
+        },
+        "navFields": {
+            "runeMap": "Rune Map",
+            "playMat": "Play Mat",
+            "equip": "Equipment"
+        },
+        "runeGrid": {
+            "rune": "Rune",
+            "activePower": "Active Power",
+            "passivePower": "Passive Power",
+            "socialPower": "Social Power",
+            "skillPower": "Skill Power"
+        }
+    }
+}

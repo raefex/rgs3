@@ -1,0 +1,327 @@
+{
+  "Actor": {
+    "types": ["dweller", "denizen"],
+    "templates": {
+      "common": {
+        "archetype": "",
+        "level": {
+          "value": 3,
+          "spent": 3
+        },
+        "essence": 1,
+        "destiny": 1,
+        "health": {
+          "value": 3,
+          "min": 0,
+          "max": 3
+        },
+        "runes": {
+          "tiwaz": {
+            "trait": "physical",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 1,
+            "bound": true
+          },
+          "berkano": {
+            "trait": "physical",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 2,
+            "bound": false
+          },
+          "ehwo": {
+            "trait": "physical",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 3,
+            "bound": false
+          },
+          "mann": {
+            "trait": "physical",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 4,
+            "bound": false
+          },
+          "claguz": {
+            "trait": "physical",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 5,
+            "bound": false
+          },
+          "ing": {
+            "trait": "physical",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 6,
+            "bound": false
+          },
+          "dagaz": {
+            "trait": "physical",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 7,
+            "bound": false
+          },
+          "othala": {
+            "trait": "physical",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 8,
+            "bound": false
+          },
+          "hagalaz": {
+            "trait": "mental",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 9,
+            "bound": false
+          },
+          "naudhneed": {
+            "trait": "mental",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 10,
+            "bound": false
+          },
+          "isaice": {
+            "trait": "mental",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 11,
+            "bound": false
+          },
+          "jethe": {
+            "trait": "mental",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 12,
+            "bound": false
+          },
+          "eihwas": {
+            "trait": "mental",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 13,
+            "bound": false
+          },
+          "pertho": {
+            "trait": "mental",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 14,
+            "bound": false
+          },
+          "elhaz": {
+            "trait": "mental",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 15,
+            "bound": false
+          },
+          "sowsun": {
+            "trait": "mental",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 16,
+            "bound": false
+          },
+          "fehu": {
+            "trait": "spiritual",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 17,
+            "bound": false
+          },
+          "uruz": {
+            "trait": "spiritual",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 18,
+            "bound": false
+          },
+          "thurisaz": {
+            "trait": "spiritual",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 19,
+            "bound": false
+          },
+          "cansuz": {
+            "trait": "spiritual",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 20,
+            "bound": false
+          },
+          "raidho": {
+            "trait": "spiritual",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 21,
+            "bound": false
+          },
+          "kenaz": {
+            "trait": "spiritual",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 22,
+            "bound": false
+          },
+          "gebgift": {
+            "trait": "spiritual",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 23,
+            "bound": false
+          },
+          "wunjo": {
+            "trait": "spiritual",
+            "activePower": "",
+            "passivePower": "",
+            "socialPower": "",
+            "skillPower": "",
+            "zone": "inBag",
+            "sort": 24,
+            "bound": false
+          }
+        }
+      }
+      
+    },
+    "dweller": {
+      "templates": ["common"],
+      "void": {
+        "trait": "",
+        "activePower": "",
+        "passivePower": "",
+        "socialPower": "",
+        "skillPower": "",
+        "zone": "inHand"
+      }
+    },
+    "denizen": {
+      "templates": ["common"]
+
+    }
+  },
+  "Item": {
+    "types": ["activePower","passivePower","socialPower","skillPower","void","equipment"],
+    "templates": {
+      "runeType": {
+        "rune": {
+          "trait": "",
+          "symbol": ""
+        }
+      },
+      "talent": {
+        "metas": {
+          "physical": "",
+          "mental": "",
+          "spiritual": ""
+        }
+      },
+      "power": {
+        "powerEffects": {}
+      },
+      "description": {
+        "desc": ""
+      }
+    },
+    "activePower": {
+      "templates": ["runeType","talent","power","description"],
+      "powerTypes": {}
+    },
+    "passivePower": {
+      "templates": ["runeType","power","description"],
+      "passiveType": "",
+      "nonCombatText": ""
+    },
+    "socialPower": {
+      "templates": ["runeType","talent","power","description"],
+      "socialType": ""
+    },
+    "skillPower": {
+      "templates": ["runeType","talent","desc"]
+    },
+    "void": {
+      "trait": "",
+      "activePower": "",
+      "passivePower": "",
+      "socialPower": "",
+      "skillPower": "",
+      "zone": ""
+    }
+  }
+}

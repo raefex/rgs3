@@ -1,0 +1,12 @@
+<form autocomplete="off">
+    {{log "Assigning Runes App"}}
+    <div class="rune-grid">
+        {{#each data.data.runes as |rune id| }}
+        <div class="rune-display {{#unless rune.bound}}unbound{{/unless}}">
+            <a class="toggle-box"><input name="data.runes.{{id}}.bound" type="checkbox" {{checked rune.bound}} /></a>
+            <img src="/systems/rgs3/images/runes/{{id}}.png" title="{{id}}" height="75" width="50" />
+        </div>
+        {{/each}}
+    </div>
+    <button type="submit" name="submit" value="1"><i class="fas fa-save"></i>{{localize "rgs3.essenceAssignment.submit"}}</button>
+</form>

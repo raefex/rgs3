@@ -1,0 +1,175 @@
+/* Font Declarations */
+@font-face {
+  font-family: 'Baron Neue';
+  font-style: normal;
+  src: url('./fonts/Baron Neue.otf');
+}
+@font-face {
+  font-family: 'Baron Neue';
+  font-style: italic;
+  src: url('./fonts/Baron Neue Italic.otf');
+}
+@font-face {
+  font-family: 'Baron Neue';
+  font-weight: bold;
+  src: url('./fonts/Baron Neue Bold.otf');
+}
+@font-face {
+  font-family: 'Baron Neue';
+  font-style: italic;
+  font-weight: bold;
+  src: url('./fonts/Baron Neue Bold Italic.otf');
+}
+.rgs3 {
+  font-family: 'Baron Neue';
+}
+.rgs3 {
+  /* Sheet Header */
+  /* Sheet Tabs */
+  /* Sheet Body */
+  /* Rune Map */
+  /* Play Mat */
+}
+.rgs3 .window-content {
+  height: 100%;
+}
+.rgs3 form {
+  height: 100%;
+}
+.rgs3 .sheet-header {
+  display: flex;
+  overflow: hidden;
+}
+.rgs3 .sheet-header .profile-img {
+  flex: 0 0 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.rgs3 .sheet-header .header-fields {
+  height: 100px;
+  width: 50%;
+  flex: none;
+}
+.rgs3 .sheet-header .header-fields .sub-name {
+  display: flex;
+  justify-content: space-evenly;
+}
+.rgs3 .sheet-header .attributes {
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.rgs3 .sheet-header .attributes .attribute-header,
+.rgs3 .sheet-header .attributes .level,
+.rgs3 .sheet-header .attributes .destiny,
+.rgs3 .sheet-header .attributes .essence {
+  justify-self: center;
+  text-align: center;
+}
+.rgs3 .sheet-header .attributes .attribute-header {
+  grid-column-start: 2;
+}
+.rgs3 .sheet-header .attributes .level {
+  grid-row-start: 2;
+}
+.rgs3 .sheet-header .attributes .destiny {
+  grid-row-start: 3;
+}
+.rgs3 .sheet-header .attributes .essence {
+  grid-row-start: 4;
+}
+.rgs3 .tabs {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-evenly;
+}
+.rgs3 .tabs .nav-item {
+  font-weight: bold;
+  flex: 0 1 auto;
+}
+.rgs3 .tabs .nav-item.active {
+  text-decoration: underline;
+}
+.rgs3 .sheet-body {
+  overflow: hidden;
+}
+.rgs3 .sheet-body .tab {
+  height: 100%;
+  overflow-y: auto;
+}
+.rgs3 .rune-map {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+.rgs3 .play-mat {
+  height: 100%;
+}
+.rgs3 .play-mat .rune-actions {
+  display: flex;
+  justify-content: space-evenly;
+}
+.rgs3 .play-mat .rune-actions .bag {
+  border: 1px solid;
+  height: 40px;
+  padding: 5px;
+  font-size: x-large;
+}
+.rgs3 .play-mat .rune-actions .bag img {
+  border: none;
+}
+.rgs3 .play-mat .zone-list {
+  display: flex;
+  flex-direction: column;
+}
+.rgs3 .play-mat .zone-list .zone {
+  width: 100%;
+  height: 95px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+}
+.rgs3 .play-mat .zone-list .zone .zone-label {
+  position: absolute;
+  top: 0;
+}
+.rgs3 .play-mat .zone-list .zone .rune {
+  background: rgba(255, 0, 0, 0.7);
+  z-index: 1;
+}
+.rgs3 .play-mat .zone-list .zone .rune img {
+  z-index: -1;
+}
+.rgs3 .play-mat .zone-list .zone .fa-minus-circle {
+  color: red;
+  font-size: 2em;
+}
+.rgs3 .play-mat .zone-list .zone.stun {
+  padding-left: 30px;
+}
+.rgs3 .play-mat .zone-list .zone.stun .zone-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.rgs3 .play-mat .zone-list .zone.stun .dmg-rune {
+  position: absolute;
+  left: 0;
+  top: 25%;
+}
+.rgs3 .rune-grid {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: column;
+}
+.rgs3 .rune-grid .rune-display {
+  display: flex;
+}
+.rgs3 .rune-grid .unbound img {
+  filter: brightness(50%);
+  background-color: darkgrey;
+}
