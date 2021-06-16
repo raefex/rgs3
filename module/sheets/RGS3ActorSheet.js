@@ -105,8 +105,8 @@ export default class RGS3ActorSheet extends ActorSheet {
                 3 * deathRunes.length +
                 3 * drainRunes.length);
         
-        //console.log("ACTOR SHEET data:");
-        //console.log(data);
+        console.log("ACTOR SHEET data:");
+        console.log(data);
 
         return data;
     }

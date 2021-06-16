@@ -1,7 +1,9 @@
 <form autocomplete="off">
     {{log "Assigning Runes App"}}
     <div class="rune-grid">
+        {{log data.data.runes}}
         {{#each data.data.runes as |rune id| }}
+        {{log rune}}
         <div class="rune-display {{#unless rune.bound}}unbound{{/unless}}">
             <a class="toggle-box"><input name="data.runes.{{id}}.bound" type="checkbox" {{checked rune.bound}} /></a>
             <img src="/systems/rgs3/images/runes/{{id}}.png" title="{{id}}" height="75" width="50" />

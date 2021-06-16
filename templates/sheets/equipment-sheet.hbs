@@ -5,7 +5,28 @@
             <input name="name" type="text" value="{{item.name}}" placeholder="Name" />
         </h1>
     </header>
+
     <p>
-        EQUIPMENT!!
+        EQUIPMENT??
     </p>
+    
+    {{!-- Item Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="secondary">
+        <a class="nav-item" data-tab="itemStats">ITEM STATS</a>
+        <a class="nav-item" data-tab="statDetails">DETAILS</a>
+    </nav>
+
+    {{!-- Item Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Item Stats --}}
+        <div class="tab" data-group="secondary" data-tab="itemStats">
+            ITEM STATS
+        </div>
+
+        {{!-- Item Details --}}
+        <div class="tab" data-group="secondary" data-tab="statDetails">
+            DETAILS
+        </div>
+    </section>
 </form>

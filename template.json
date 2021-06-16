@@ -322,6 +322,91 @@
       "socialPower": "",
       "skillPower": "",
       "zone": ""
+    },
+    "equipment": {
+      "qrTotal": 0,
+      "qr": {
+        "smallEffect": {
+          "value": 0,
+          "cost": 1
+        },
+        "heal": {
+          "value": 0,
+          "cost": 1
+        },
+        "parryPhysical": {
+          "value": 0,
+          "cost": 1
+        },
+        "parryMental": {
+          "value": 0,
+          "cost": 2
+        },
+        "parrySpiritual": {
+          "value": 0,
+          "cost": 2
+        },
+        "parrySocial": {
+          "value": 0,
+          "cost": 1
+        },
+        "reach": {
+          "value": 0,
+          "cost": 1
+        },
+        "range": {
+          "value": 0,
+          "cost": 2
+        },
+        "damageFactorPhysical": {
+          "value": 0,
+          "cost": 1
+        },
+        "damageFactorMental": {
+          "value": 0,
+          "cost": 2
+        },
+        "damageFactorSpiritual": {
+          "value": 0,
+          "cost": 2
+        },
+        "damageFactorSocial": {
+          "value": 0,
+          "cost": 1
+        },
+        "move": {
+          "value": 0,
+          "cost": 1
+        },
+        "focus": {
+          "value": 0,
+          "cost": 3
+        },
+        "protectionFactorPhysical": {
+          "value": 0,
+          "cost": 2
+        },
+        "protectionFactorMental": {
+          "value": 0,
+          "cost": 3
+        },
+        "protectionFactorSpiritual": {
+          "value": 0,
+          "cost": 3
+        },
+        "protectionFactorSocial": {
+          "value": 0,
+          "cost": 2
+        },
+        "addMetaTag": {
+          "value": 0,
+          "cost": 4
+        },
+        "inflictCondition": {
+          "value": 0,
+          "cost": 4
+        }
+      }
     }
   }
 }
