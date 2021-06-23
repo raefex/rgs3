@@ -43,7 +43,8 @@
             "stun": "STUN",
             "wounds": "WOUNDS",
             "death": "DEATH",
-            "drain": "DRAIN"
+            "drain": "DRAIN",
+            "qrTotal": "QR TOTAL"
         },
         "toolTips": {
             "wyrd": "Pull Runes Equal to Destiny from Essence Bag to In-Hand",

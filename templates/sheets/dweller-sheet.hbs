@@ -107,12 +107,12 @@
                     <div class="zone-label">{{localize "rgs3.headerFields.inPlay"}}</div>
                     {{#if (eq data.void.zone "inPlay")}}
                         <div class="rune" id="void">
-                            <img src="/systems/rgs3/images/runes/void.png" title="void" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/void.png" id="void" title="void" height="75" width="50" />
                         </div>
                     {{/if}}
                     {{#each inPlayZone as |rune|}}
                         <div class="rune" id="{{rune}}">
-                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" id="{{rune}}" title="{{rune}}" height="75" width="50" />
                         </div>
                     {{/each}}
                 </div>
@@ -120,12 +120,12 @@
                     <div class="zone-label">{{localize "rgs3.headerFields.contingency"}}</div>
                     {{#if (eq data.void.zone "contingency")}}
                         <div class="rune" id="void">
-                            <img src="/systems/rgs3/images/runes/void.png" title="void" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/void.png" id="void" title="void" height="75" width="50" />
                         </div>
                     {{/if}}
                     {{#each contingencyZone as |rune|}}
                         <div class="rune" id="{{rune}}">
-                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" id="{{rune}}" title="{{rune}}" height="75" width="50" />
                         </div>
                     {{/each}}
                 </div>
@@ -133,12 +133,12 @@
                     <div class="zone-label">{{localize "rgs3.headerFields.inHand"}}</div>
                     {{#if (eq data.void.zone "inHand")}}
                         <div class="rune" id="void">
-                            <img src="/systems/rgs3/images/runes/void.png" title="void" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/void.png" id="void" title="void" height="75" width="50" />
                         </div>
                     {{/if}}
                     {{#each inHandZone as |rune|}}
                         <div class="rune" id="{{rune}}">
-                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" id="{{rune}}" title="{{rune}}" height="75" width="50" />
                         </div>
                     {{/each}}
                 </div>
@@ -147,7 +147,7 @@
                     <a class="dmg-rune" title="{{localize "rgs3.toolTips.stun"}}"><i class="fas fa-minus-circle"></i></a>
                     {{#each stunZone as |rune|}}
                         <div class="rune" id="{{rune}}">
-                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" id="{{rune}}" title="{{rune}}" height="75" width="50" />
                         </div>
                     {{/each}}
                 </div>
@@ -155,7 +155,7 @@
                     <div class="zone-label">{{localize "rgs3.headerFields.wounds"}}</div>
                     {{#each woundZone as |rune|}}
                         <div class="rune" id="{{rune}}">
-                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" id="{{rune}}" title="{{rune}}" height="75" width="50" />
                         </div>
                     {{/each}}
                 </div>
@@ -163,7 +163,7 @@
                     <div class="zone-label">{{localize "rgs3.headerFields.death"}}</div>
                     {{#each deathZone as |rune|}}
                         <div class="rune" id="{{rune}}">
-                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" id="{{rune}}" title="{{rune}}" height="75" width="50" />
                         </div>
                     {{/each}}
                 </div>
@@ -171,7 +171,7 @@
                     <div class="zone-label">{{localize "rgs3.headerFields.drain"}}</div>
                     {{#each drainZone as |rune|}}
                         <div class="rune" id="{{rune}}">
-                            <img src="/systems/rgs3/images/runes/{{rune}}.png" title="{{rune}}" height="75" width="50" />
+                            <img src="/systems/rgs3/images/runes/{{rune}}.png" id="{{rune}}" title="{{rune}}" height="75" width="50" />
                         </div>
                     {{/each}}
                 </div>

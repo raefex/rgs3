@@ -18,6 +18,9 @@ export default class RGS3ItemSheet extends ItemSheet {
 
         data.config = CONFIG.rgs3;
 
+        const itemData = data.data;
+        data.data = itemData.data;
+
         console.log("ITEM data:");
         console.log(data);
 

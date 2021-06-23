@@ -322,6 +322,7 @@ export default class RGS3ActorSheet extends ActorSheet {
 
         //get rune being dropped
         let html = event.dataTransfer.getData("text/html");
+        console.log("html: ", html);
         let placeholder = document.createElement('div');
         placeholder.innerHTML = html;
         let source = placeholder.firstElementChild;
