@@ -7,9 +7,9 @@ export default class RGS3ActorSheet extends ActorSheet {
             template: "systems/rgs3/templates/sheets/dweller-sheet.hbs",
             classes: ["rgs3", "sheet", "dweller"],
             height: 890,
-            tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "playMat"}],
+            tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "equipment"}],
             scrollY: [".runeMap", ".playMat", ".equipment"],
-            dragDrop: [ {dragSelector: ".zone-list .zone", dropSelector: ".zone, .bag"} ]
+            dragDrop: [ {dragSelector: ".zone-list .zone", dropSelector: ".zone, .bag, .equipment-list"} ]
         });
     }
 
@@ -104,6 +104,12 @@ export default class RGS3ActorSheet extends ActorSheet {
                 2 * woundRunes.length +
                 3 * deathRunes.length +
                 3 * drainRunes.length);
+
+        /* -------------------------------- */
+        /* Equipment assignment             */
+        /* -------------------------------- */
+
+        data.equipment = data.items.filter(function (item) {return item.type = "equipment"});
         
         console.log("ACTOR SHEET data:");
         console.log(data);
@@ -310,7 +316,7 @@ export default class RGS3ActorSheet extends ActorSheet {
     }
 
     async _onDrop(event) {
-        event.preventDefault();
+        //event.preventDefault();
 
         //get actor reference
         let actor = game.actors.get(this.object.data._id);
@@ -319,34 +325,50 @@ export default class RGS3ActorSheet extends ActorSheet {
         let element = event.target;
         console.log(element);
         let zone = element.dataset.zone;
-
-        //get rune being dropped
-        let html = event.dataTransfer.getData("text/html");
-        console.log("html: ", html);
-        let placeholder = document.createElement('div');
-        placeholder.innerHTML = html;
-        let source = placeholder.firstElementChild;
-        let id = source.getAttribute("id");
-
-        console.log(id);
         console.log(zone);
 
-        //update rune zone
-        if (id == "void") {
-            if (zone == "inPlay" || zone == "contingency" || zone == "inHand") {
-                actor.update( {"data.void.zone" : zone } );
+        if (zone != "gear") {
+            //get rune being dropped
+            let html = event.dataTransfer.getData("text/html");
+            console.log("html: ", html);
+            let placeholder = document.createElement('div');
+            placeholder.innerHTML = html;
+            let source = placeholder.firstElementChild;
+            let id = source.getAttribute("id");
+
+            console.log(id);
+            console.log(zone);
+
+            //update rune zone
+            if (id == "void") {
+                if (zone == "inPlay" || zone == "contingency" || zone == "inHand") {
+                    actor.update( {"data.void.zone" : zone } );
+                }
+                else if (zone == "inBag") {
+                    ui.notifications.error("Void Rune cannot be placed in Essence Bag");
+                }
+                else if (zone == "stun" || zone == "wounds" || zone == "death" || zone == "drain") {
+                    ui.notifications.error("Void Rune cannot be placed in Damage Track");
+                }
             }
-            else if (zone == "inBag") {
-                ui.notifications.error("Void Rune cannot be placed in Essence Bag");
-            }
-            else if (zone == "stun" || zone == "wounds" || zone == "death" || zone == "drain") {
-                ui.notifications.error("Void Rune cannot be placed in Damage Track");
+            else {
+                let runeUpdate = `data.runes.${id}.zone`;
+                actor.update( { [`${runeUpdate}`] : zone } );
             }
         }
         else {
-            let runeUpdate = `data.runes.${id}.zone`;
-            actor.update( { [`${runeUpdate}`] : zone } );
+            console.log("In Gear zone");
+            console.log(event);
+            let itemEvent = JSON.parse(event.dataTransfer.getData('text/plain'));
+            console.log(itemEvent);
+
+            let itemDrop = game.items.get(itemEvent.id);
+            console.log(itemDrop);
+
+            actor.createEmbeddedDocuments("Item", [itemDrop.toObject()]);
         }
+
+        
         
     }
 }

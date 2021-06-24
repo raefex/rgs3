@@ -6,8 +6,11 @@ import RGS3ActorSheet from "./module/sheets/RGS3ActorSheet.js";
 
 async function preloadHandlebarsTemplates() {
     const templatePaths = [
-        "systems/rgs3/templates/partials/character-stat-block.hbs"
+        "systems/rgs3/templates/partials/character-stat-block.hbs",
+        "systems/rgs3/templates/partials/equipment-stat-block.hbs"
     ];
+
+    return loadTemplates(templatePaths);
 }
 
 Hooks.once("init", function () {

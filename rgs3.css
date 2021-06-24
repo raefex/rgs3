@@ -23,107 +23,108 @@
 .rgs3 {
   font-family: 'Baron Neue';
 }
-.rgs3 {
+.rgs3.sheet.dweller {
   /* Sheet Header */
   /* Sheet Tabs */
   /* Sheet Body */
   /* Rune Map */
   /* Play Mat */
+  /* Equipment */
 }
-.rgs3 .window-content {
+.rgs3.sheet.dweller .window-content {
   height: 100%;
 }
-.rgs3 form {
+.rgs3.sheet.dweller form {
   height: 100%;
 }
-.rgs3 .sheet-header {
+.rgs3.sheet.dweller .sheet-header {
   display: flex;
   overflow: hidden;
 }
-.rgs3 .sheet-header .profile-img {
+.rgs3.sheet.dweller .sheet-header .profile-img {
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
 }
-.rgs3 .sheet-header .header-fields {
+.rgs3.sheet.dweller .sheet-header .header-fields {
   height: 100px;
   width: 50%;
   flex: none;
 }
-.rgs3 .sheet-header .header-fields .sub-name {
+.rgs3.sheet.dweller .sheet-header .header-fields .sub-name {
   display: flex;
   justify-content: space-evenly;
 }
-.rgs3 .sheet-header .attributes {
+.rgs3.sheet.dweller .sheet-header .attributes {
   width: 30%;
   display: grid;
   grid-template-columns: repeat(3, auto);
 }
-.rgs3 .sheet-header .attributes .attribute-header,
-.rgs3 .sheet-header .attributes .level,
-.rgs3 .sheet-header .attributes .destiny,
-.rgs3 .sheet-header .attributes .essence {
+.rgs3.sheet.dweller .sheet-header .attributes .attribute-header,
+.rgs3.sheet.dweller .sheet-header .attributes .level,
+.rgs3.sheet.dweller .sheet-header .attributes .destiny,
+.rgs3.sheet.dweller .sheet-header .attributes .essence {
   justify-self: center;
   text-align: center;
 }
-.rgs3 .sheet-header .attributes .attribute-header {
+.rgs3.sheet.dweller .sheet-header .attributes .attribute-header {
   grid-column-start: 2;
 }
-.rgs3 .sheet-header .attributes .level {
+.rgs3.sheet.dweller .sheet-header .attributes .level {
   grid-row-start: 2;
 }
-.rgs3 .sheet-header .attributes .destiny {
+.rgs3.sheet.dweller .sheet-header .attributes .destiny {
   grid-row-start: 3;
 }
-.rgs3 .sheet-header .attributes .essence {
+.rgs3.sheet.dweller .sheet-header .attributes .essence {
   grid-row-start: 4;
 }
-.rgs3 .tabs {
+.rgs3.sheet.dweller .tabs {
   border-top: 1px solid;
   border-bottom: 1px solid;
   display: flex;
   justify-content: space-evenly;
 }
-.rgs3 .tabs .nav-item {
+.rgs3.sheet.dweller .tabs .nav-item {
   font-weight: bold;
   flex: 0 1 auto;
 }
-.rgs3 .tabs .nav-item.active {
+.rgs3.sheet.dweller .tabs .nav-item.active {
   text-decoration: underline;
 }
-.rgs3 .sheet-body {
+.rgs3.sheet.dweller .sheet-body {
   overflow: hidden;
 }
-.rgs3 .sheet-body .tab {
+.rgs3.sheet.dweller .sheet-body .tab {
   height: 100%;
   overflow-y: auto;
 }
-.rgs3 .rune-map {
+.rgs3.sheet.dweller .rune-map {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(5, auto);
 }
-.rgs3 .play-mat {
+.rgs3.sheet.dweller .play-mat {
   height: 100%;
 }
-.rgs3 .play-mat .rune-actions {
+.rgs3.sheet.dweller .play-mat .rune-actions {
   display: flex;
   justify-content: space-evenly;
 }
-.rgs3 .play-mat .rune-actions .bag {
+.rgs3.sheet.dweller .play-mat .rune-actions .bag {
   border: 1px solid;
   height: 40px;
   padding: 5px;
   font-size: x-large;
 }
-.rgs3 .play-mat .rune-actions .bag img {
+.rgs3.sheet.dweller .play-mat .rune-actions .bag img {
   border: none;
 }
-.rgs3 .play-mat .zone-list {
+.rgs3.sheet.dweller .play-mat .zone-list {
   display: flex;
   flex-direction: column;
 }
-.rgs3 .play-mat .zone-list .zone {
+.rgs3.sheet.dweller .play-mat .zone-list .zone {
   width: 100%;
   height: 95px;
   border: 1px solid;
@@ -132,33 +133,40 @@
   align-items: flex-end;
   position: relative;
 }
-.rgs3 .play-mat .zone-list .zone .zone-label {
+.rgs3.sheet.dweller .play-mat .zone-list .zone .zone-label {
   position: absolute;
   top: 0;
 }
-.rgs3 .play-mat .zone-list .zone .rune {
+.rgs3.sheet.dweller .play-mat .zone-list .zone .rune {
   background: rgba(255, 0, 0, 0.7);
   z-index: 1;
 }
-.rgs3 .play-mat .zone-list .zone .rune img {
+.rgs3.sheet.dweller .play-mat .zone-list .zone .rune img {
   z-index: -1;
 }
-.rgs3 .play-mat .zone-list .zone .fa-minus-circle {
+.rgs3.sheet.dweller .play-mat .zone-list .zone .fa-minus-circle {
   color: red;
   font-size: 2em;
 }
-.rgs3 .play-mat .zone-list .zone.stun {
+.rgs3.sheet.dweller .play-mat .zone-list .zone.stun {
   padding-left: 30px;
 }
-.rgs3 .play-mat .zone-list .zone.stun .zone-label {
+.rgs3.sheet.dweller .play-mat .zone-list .zone.stun .zone-label {
   position: absolute;
   left: 0;
   top: 0;
 }
-.rgs3 .play-mat .zone-list .zone.stun .dmg-rune {
+.rgs3.sheet.dweller .play-mat .zone-list .zone.stun .dmg-rune {
   position: absolute;
   left: 0;
   top: 25%;
+}
+.rgs3.sheet.dweller .equipment-list {
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
 }
 .rgs3 .rune-grid {
   display: grid;
@@ -173,35 +181,35 @@
   filter: brightness(50%);
   background-color: darkgrey;
 }
-.rgs3 .window-content {
+.rgs3.sheet.item .window-content {
   height: 100%;
 }
-.rgs3 form {
+.rgs3.sheet.item form {
   display: flex;
   flex-direction: column;
 }
-.rgs3 .qrDisplay {
+.rgs3.sheet.item .qrDisplay {
   display: flex;
   flex-direction: column;
 }
-.rgs3 .qrDisplay .qrValue {
+.rgs3.sheet.item .qrDisplay .qrValue {
   display: flex;
   flex-direction: row;
 }
-.rgs3 .qrTotal {
+.rgs3.sheet.item .qrTotal {
   display: flex;
 }
-.rgs3 .qrDetails {
+.rgs3.sheet.item .qrDetails {
   display: grid;
   grid-template-columns: auto auto auto;
 }
-.rgs3 .description {
+.rgs3.sheet.item .description {
   height: 100%;
   width: 100%;
 }
-.rgs3 .description .editor {
+.rgs3.sheet.item .description .editor {
   height: 100%;
 }
-.rgs3 .description .editor .editor-content {
+.rgs3.sheet.item .description .editor .editor-content {
   min-height: 30px;
 }
