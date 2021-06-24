@@ -324,6 +324,7 @@
       "zone": ""
     },
     "equipment": {
+      "templates": ["description"],
       "qrTotal": 0,
       "qr": {
         "smallEffect": {

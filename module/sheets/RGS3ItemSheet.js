@@ -8,6 +8,7 @@ export default class RGS3ItemSheet extends ItemSheet {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             classes: ["rgs3", "sheet", "item"],
+            height: 400,
             tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: ".itemStats"}]
         });
     }

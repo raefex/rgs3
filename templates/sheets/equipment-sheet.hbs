@@ -5,10 +5,6 @@
             <input name="name" type="text" value="{{item.name}}" placeholder="Name" />
         </h1>
     </header>
-
-    <p>
-        EQUIPMENT??
-    </p>
     
     {{!-- Item Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="secondary">
@@ -21,13 +17,52 @@
 
         {{!-- Item Stats --}}
         <div class="tab" data-group="secondary" data-tab="itemStats">
-            ITEM STATS
+            <div class="qrTotal">
+                {{#if (gt data.qrTotal 0)}}
+                <label>{{localize "rgs3.headerFields.qrTotal"}}: {{data.qrTotal}}</label>
+                {{/if}}
+            </div>
+
+            <div class="qrDisplay">
+                {{#each data.qr as |q id|}}
+                    {{#if (gt q.value 0)}}
+                        <div class="qrValue">
+                            <label>{{id}}</label>
+                            <span>{{q.value}}</span>
+                        </div>
+                    {{/if}}
+                {{/each}}
+            </div>
+
+            <br />
+
+            <div class="description">
+                <label>{{localize "rgs3.headerFields.desc"}}</label>
+                {{ editor content=data.desc target="data.desc" button=true owner=owner editable=editable}}
+            </div>
+
         </div>
 
         {{!-- Item Details --}}
         <div class="tab" data-group="secondary" data-tab="statDetails">
             <div class="qrTotal">
                 <label>{{localize "rgs3.headerFields.qrTotal"}}: {{data.qrTotal}}</label>
+            </div>
+            <div class="qrDetails">
+                <label>{{localize "rgs3.headerFields.effectType"}}</label>
+                <label>{{localize "rgs3.headerFields.value"}}</label>
+                <label>{{localize "rgs3.headerFields.qrCost"}}</label>
+
+                {{#each data.qr as |q id|}}
+
+                <label>{{id}}</label>
+                <input name="data.qr.{{id}}.value" type="number" value="{{q.value}}" />
+                <span>{{q.cost}}</span>
+                {{/each}}
+                <label>{{localize "rgs3.headerFields.desc"}}</label>
+                
+                {{!-- <textarea name="data.desc">{{data.desc}}</textarea>
+                --}}
             </div>
         </div>
     </section>

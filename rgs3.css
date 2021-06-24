@@ -173,3 +173,35 @@
   filter: brightness(50%);
   background-color: darkgrey;
 }
+.rgs3 .window-content {
+  height: 100%;
+}
+.rgs3 form {
+  display: flex;
+  flex-direction: column;
+}
+.rgs3 .qrDisplay {
+  display: flex;
+  flex-direction: column;
+}
+.rgs3 .qrDisplay .qrValue {
+  display: flex;
+  flex-direction: row;
+}
+.rgs3 .qrTotal {
+  display: flex;
+}
+.rgs3 .qrDetails {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.rgs3 .description {
+  height: 100%;
+  width: 100%;
+}
+.rgs3 .description .editor {
+  height: 100%;
+}
+.rgs3 .description .editor .editor-content {
+  min-height: 30px;
+}

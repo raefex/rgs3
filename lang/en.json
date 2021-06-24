@@ -44,7 +44,12 @@
             "wounds": "WOUNDS",
             "death": "DEATH",
             "drain": "DRAIN",
-            "qrTotal": "QR TOTAL"
+            "effectType": "EFFECT TYPE",
+            "value": "VALUE",
+            "qrCost": "QR COST",
+            "qrTotal": "QR TOTAL",
+            "smallEffect": "SMALL EFFECT",
+            "desc": "DESCRIPTION"
         },
         "toolTips": {
             "wyrd": "Pull Runes Equal to Destiny from Essence Bag to In-Hand",

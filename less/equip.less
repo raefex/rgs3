@@ -1,5 +1,38 @@
 .rgs3 {
+
+    .window-content {
+        height: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .qrDisplay {
+        display: flex;
+        flex-direction: column;
+        .qrValue {
+            display: flex;
+            flex-direction: row;
+        }
+    }
     .qrTotal {
         display: flex;
+    }
+    .qrDetails {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .description {
+        height: 100%;
+        width: 100%;
+        .editor {
+            height: 100%;
+            .editor-content {
+                min-height: 30px;
+            }
+        }
     }
 }
