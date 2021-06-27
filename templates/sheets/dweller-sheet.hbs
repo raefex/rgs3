@@ -181,8 +181,6 @@
         {{!-- Equipment --}}
         <div class="tab equipment" data-group="primary" data-tab="equipment">
             <section class="equipment-list" data-zone="gear">
-                STUFF AND THINGS
-                {{log equipment}}
                 {{#each equipment as |gear id|}}
                     {{> "systems/rgs3/templates/partials/equipment-stat-block.hbs" gear}}
                 {{/each}}

@@ -1,6 +1,19 @@
-<section>
-    <p>
-        GEAR STUFF!!
-        {{log gear}}
-    </p>
+<section class="equip-stat-block">
+    <span>{{this.name}}</span>
+    
+    <div class="qrDisplay">
+        {{#each this.data.qr as |q id|}}
+            {{#if (gt q.value 0)}}
+                <div class="qrValue">
+                    <label>{{id}}</label>
+                    <span>{{q.value}}</span>
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+
+    <div class="description">
+        <label>{{localize "rgs3.headerFields.desc"}}</label>
+        <span>{{{this.data.desc}}}</span>
+    </div>
 </section>

@@ -163,10 +163,12 @@
 }
 .rgs3.sheet.dweller .equipment-list {
   height: 100%;
+  min-height: 200px;
   width: 100%;
   border: 1px solid;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .rgs3 .rune-grid {
   display: grid;
